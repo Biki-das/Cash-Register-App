@@ -1,0 +1,188 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Martian+Mono&family=Space+Grotesk:wght@500&display=swap');
+
+*,
+::after,
+::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    font-family: 'Martian Mono', monospace;
+}
+
+body{
+    background-color: #212121;
+}
+
+input,label{
+    display: block;
+    font: inherit;
+}
+
+input{
+    border: 2px solid gray;
+}
+
+input:focus {
+    outline: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+  }
+  
+  
+
+main{
+    width: 800px;
+    height: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5rem;
+    margin-top: 5rem;
+}
+
+
+
+.form-inp{
+ padding:0.5rem 1rem;
+ margin-top: 0.5rem;
+ border-radius: 0.4rem;
+ transition: border 0.3s linear;
+}
+
+#btn-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+}
+
+
+#btn{
+    padding: 1rem;
+    border-radius: 0.5rem;
+    font-family: inherit;
+    background-color: #967bb6;
+    cursor: pointer;
+}
+
+form > div{
+    position: relative;
+}
+
+.form-inp:focus{
+    border: 2px solid green;
+}
+
+
+#Form-section{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#Notes-section{
+    flex: 1;
+    display: grid;
+    grid-gap: 1rem;
+    place-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr); 
+}
+
+#Notes-section > div:first-child{
+    background-color: magenta;
+    opacity: 0.8;
+}
+
+#Notes-section > div:nth-child(2){
+    background-color: #928e85;
+    opacity: 0.8;
+}
+
+#Notes-section > div:nth-child(3){
+    background-color: #967bb6;
+}
+
+#Notes-section > div:nth-child(4){
+    background-color: #9ACD32;
+}
+
+#Notes-section > div:nth-child(5){
+    background-color: #7B3F00;
+}
+
+#Notes-section > div:nth-child(6) {
+    background-color: #C0C0C0;
+}
+
+#Notes-section > div:last-child{
+    background-color: #C0C0C0;
+
+}
+
+
+
+svg#ruppe-icon{
+    position: absolute;
+    top:2.4rem;
+    right: 1rem;
+}
+
+
+svg#cash-icon{
+    position: absolute;
+    top:2.4rem;
+    right: 1rem;
+}
+
+
+.notes-grid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    width: 150px;
+    cursor: pointer;
+    border-radius: 1rem;
+}
+
+p{
+    font-size: 1.5rem;
+}
+
+label{
+    margin-top: 1rem;
+    color: white;
+}
+
+
+
+@media (max-width: 760px) {
+    
+    main{
+        width: 80%;
+        flex-direction: column;
+        justify-content: start;
+    }
+    #Notes-section{
+        margin-top: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+    }
+}
