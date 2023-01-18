@@ -79,6 +79,7 @@ main{
     font-family: inherit;
     background-color: #967bb6;
     cursor: pointer;
+    color: wheat;
 }
 
 form > div{
