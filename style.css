@@ -19,7 +19,7 @@ body{
     background-color: #212121;
 }
 
-input,label{
+button,input,label{
     display: block;
     font: inherit;
 }
@@ -82,6 +82,22 @@ main{
     color: wheat;
 }
 
+
+#btn-reset-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+#btn-reset{
+   padding: 1rem;
+   border-radius: 0.5rem;
+   background-color: palevioletred;
+}
+
+
+
+
 form > div{
     position: relative;
 }
@@ -97,6 +113,14 @@ form > div{
   justify-content: center;
   align-items: center;
 }
+
+#bill-error{
+    color: white;
+    margin-top: 2rem;
+    display: none;
+}
+
+
 
 #Notes-section{
     flex: 1;
@@ -162,10 +186,17 @@ svg#cash-icon{
     width: 150px;
     cursor: pointer;
     border-radius: 1rem;
+    position: relative;
 }
 
-p{
+p.note-value{
     font-size: 1.5rem;
+}
+
+p.denominations{
+    position: absolute;
+    bottom: 0.5rem;
+    font-size: 1.3rem;
 }
 
 label{
@@ -183,7 +214,7 @@ label{
         justify-content: start;
     }
     #Notes-section{
-        margin-top: 2rem;
-    grid-template-columns: repeat(2, 1fr);
+       margin-top: 2rem;
+       grid-template-columns: repeat(2, 1fr);
     }
 }
