@@ -8,6 +8,7 @@ const tenDenominationText = document.querySelector("#tenruppee-value")
 const fiveDenominationText = document.querySelector("#fiveruppee-value")
 const oneDenominationText = document.querySelector('#oneruppee-value')
 const btn = document.querySelector("#btn")
+const resetBtn = document.querySelector("#btn-reset")
 const billErrortext = document.querySelector("#bill-error")
 
 
@@ -114,3 +115,13 @@ btn.addEventListener("click", (e) => {
    }
 })
 
+
+resetBtn.addEventListener("click",() => {
+  twoThousandDenominationText.textContent = 0;
+  fiveHundredDenominationText.textContent = 0;
+  oneHundredDenomninationText.textContent = 0;
+  twentyDenominationText.textContent = 0;
+  tenDenominationText.textContent = 0;
+  fiveDenominationText.textContent = 0;
+  oneDenominationText.textContent = 0;
+})
